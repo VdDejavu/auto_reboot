@@ -1,5 +1,11 @@
 # auto_reboot
 
+Download script
+
+wget https://raw.githubusercontent.com/VdDejavu/auto_reboot/refs/heads/main/auto_reboot.sh
+
+chmod +x auto_reboot.sh
+
 Tambahkan Schedule untuk cek setiap 5 menit
 
 Crontab -e
