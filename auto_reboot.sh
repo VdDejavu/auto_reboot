@@ -8,7 +8,7 @@ if [[ "$(ping -c 10 $Internet | grep -oP '\d+(?=% packet loss)')" == 100 ]]; the
 	if [[ "$(ping -c 10 $Lan | grep -oP '\d+(?=% packet loss)')" == 100 ]]; then
 		echo "$DATE Internet: DOWN, Lan: DOWN";
 		echo "$DATE Reboot Now";
-		exit 1
+		/sbin/reboot
 	else
 	    echo "$DATE Internet: DOWN, Lan: OK";
 	fi
