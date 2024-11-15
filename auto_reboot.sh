@@ -1,6 +1,6 @@
  #!/bin/bash
 
-Internet=192.168.1.1
+Internet=8.8.8.8
 Lan=192.168.0.1
 
 DATE=$(date '+%d/%m/%Y %H:%M:%S')
