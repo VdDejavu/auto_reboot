@@ -1,4 +1,4 @@
- #!/bin/bash
+#!/bin/bash
 
 Internet=8.8.8.8
 Lan=192.168.0.1
