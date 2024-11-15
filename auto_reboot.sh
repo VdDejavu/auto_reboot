@@ -2,8 +2,8 @@
 
 Internet=8.8.8.8
 Lan=192.168.0.1
-
 DATE=$(date '+%d/%m/%Y %H:%M:%S')
+
 if [[ "$(ping -c 10 $Internet | grep -oP '\d+(?=% packet loss)')" == 100 ]]; then
 	if [[ "$(ping -c 10 $Lan | grep -oP '\d+(?=% packet loss)')" == 100 ]]; then
 		echo "$DATE Internet: DOWN, Lan: DOWN";
